@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Press Start 2p",sans-serif;
+    color: #eee;
+    background-color: #222;
+    /* background-color: #60b347; */
+}
+
+/* layout */
+header{
+    position: relative;
+    height: 35vh;
+    border: 7px solid #eee;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 65vh;
+    color: #eee;
+}
+
+/* element style */
+header h1{
+    font-size: 4rem;
+    position:absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+
+}
+
+header .number{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    background-color: #eee;
+    width: 60px;
+    color: #333;
+    padding: 3rem 0;
+    font-size: 6rem;
+    width: 15rem;
+}
+header .between{
+    font-size: 1.4rem;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+header .again{
+    top: 2rem;
+    left: 2rem;
+    position: absolute;
+}
+
+section .guess{
+    border: 4px solid #eee;
+    outline: none;
+    width: 20rem;
+    text-indent: 10px;
+    background-color: transparent;
+    color: #eee;
+    font-family: inherit;
+    font-size: 3rem;
+    padding: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.btn{
+    display: block;
+    padding: 1rem 1.5rem;
+    font-family: inherit;
+    border: none;
+    border-radius: 2px;
+    background-color: #eee;
+    color: #333;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #ccc;
+}
+.message{
+    margin-bottom: 8px;
+    height: 3rem;
+}
+.label-score{
+    margin-bottom: 3rem;
+}
+
+/* media query */
+@media screen and (max-width:580px){
+    header h1{
+        font-size: 2rem;
+    }
+    header .number{
+        font-size: 1.6rem;
+        width: 10rem;
+    }
+}
